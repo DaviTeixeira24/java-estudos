@@ -20,6 +20,6 @@ public class Exercicio3 {
     } else if (numero3 > numero2 && numero3 > numero1) {
       System.out.println("Maior numero é: " + numero3);
     }
-
+    scanner.close();
   }
 }

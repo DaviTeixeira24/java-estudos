@@ -34,5 +34,6 @@ public class Exercicio6 {
     } else {
       System.out.println("Professor! o maximo de nota é 100! e o minimo é 0!");
     }
+    scanner.close();
   }
 }

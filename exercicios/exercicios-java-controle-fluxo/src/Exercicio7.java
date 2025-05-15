@@ -28,5 +28,6 @@ public class Exercicio7 {
         System.out.println("Só existem 3 turnos!");
         break;
     }
+    scanner.close();
   }
 }

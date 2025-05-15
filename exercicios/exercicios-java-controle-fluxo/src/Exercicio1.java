@@ -16,5 +16,6 @@ public class Exercicio1 {
         } else {
             System.out.println("Numero Impar!");
         }
+        scanner.close();
     }
 }

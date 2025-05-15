@@ -20,7 +20,7 @@ public class Exercicio5 {
     int soma = numero1 + numero2;
     int subtracao = numero1 - numero2;
     int multiplicacao = numero1 * numero2;
-    double divisao = numero1 / numero2;
+    double divisao = (double) numero1 / numero2;
 
     switch (operador) {
       case "+": {
@@ -44,6 +44,6 @@ public class Exercicio5 {
         System.out.println("Operador não listado");
         break;
     }
-
+    scanner.close();
   }
 }

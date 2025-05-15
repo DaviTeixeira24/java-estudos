@@ -27,6 +27,6 @@ public class Exercicio8 {
     } else if (temperatura > 25) {
       System.out.println("Quente");
     }
-
+    scanner.close();
   }
 }

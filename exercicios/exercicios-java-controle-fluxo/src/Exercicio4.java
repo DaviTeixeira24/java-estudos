@@ -42,6 +42,6 @@ public class Exercicio4 {
         System.out.println("Opção nao listda!");
         break;
     }
-
+    scanner.close();
   }
 }

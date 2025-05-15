@@ -27,5 +27,6 @@ public class Exercicio2 {
     } else if (idade >= 60) {
       System.out.println("Voce é um Idoso!");
     }
+    scanner.close();
   }
 }

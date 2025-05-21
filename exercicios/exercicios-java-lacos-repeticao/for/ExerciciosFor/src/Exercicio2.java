@@ -15,4 +15,5 @@ public class Exercicio2 {
     }
     System.out.println("Soma dos numeros pares: " + soma);
   }
+
 }

@@ -31,13 +31,13 @@ public class Exercicio1 {
      */
 
     // corrigido e correto
-    int numeroA = random.nextInt(10) + 1;
+    int numeroA = random.nextInt(50) + 1;
 
     int palpite = 0; // obs: inicializa o palpite fora do laço
 
     while (palpite != numeroA) {
-      System.out.print("Digite um número entre 1 e 10: ");
-      palpite = scanner.nextInt(); //
+      System.out.print("Digite um número entre 1 e 50: ");
+      palpite = scanner.nextInt(); // Lê o palpite do jogador
 
       if (palpite < numeroA) {
         System.out.println("Muito baixo! Tente novamente.");

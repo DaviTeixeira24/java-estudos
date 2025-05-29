@@ -1,7 +1,8 @@
 package swingdemo;
 
-import javax.swing.JFrame; // JFrame é a classe utilizada para criar a interface grafica(GUI)
-import javax.swing.JLabel; // JLabel é a classe utilizada para criar textos dentro da interface
+import javax.swing.*;
+import java.awt.FlowLayout;
+import java.awt.*;
 
 public class FirstGUI {
   public static void main(String[] args) {
@@ -11,16 +12,21 @@ public class FirstGUI {
   }
 }
 
-// realizar os comandos dentro do contruto
+// realizar os comandos dentro do construtor
 class GUI extends JFrame {
 
   public GUI() {
 
-    setVisible(true);// por default o JFrame nao é visivel, então utilizamos de um metodo para deixar
-                     // o objeto visivel
-    setSize(400, 400); // aqui definimos o tamanho da interface;
+    JLabel label = new JLabel("Ola Mundo!"); // criando um componente de texto(geralmente chamado de label)
+    JLabel label2 = new JLabel("Minha Primeira GUI!");
 
-    JLabel label = new JLabel("Ola Mundo!"); // criando o objeto de texto(geralmente chamado de label)
     add(label);// adicionando a label na interface
+    add(label2);
+
+    // comandos essenciais para funcionamento da GUI
+    setLayout(new FlowLayout());
+    setSize(400, 400);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setVisible(true);
   }
 }

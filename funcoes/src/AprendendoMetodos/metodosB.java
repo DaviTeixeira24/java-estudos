@@ -1,6 +1,14 @@
 package AprendendoMetodos;
 
 public class metodosB {
+
+  // Escopo global(de classe)
+  static int globalVar = 20;
+  /*
+   * usamos o static para que a variavel possa ser usada independente se a classe
+   * for instanciada não(assim como nos métodos||funções)
+   */
+
   public static void main(String[] args) {
 
     // 5 - funçoes com condicionais
@@ -13,9 +21,29 @@ public class metodosB {
     System.out.println(r2);
 
     // 7 - System Exit
-    verificarAutenticacao("asas", "Sen haSegura");
-
+    verificarAutenticacao("admin", "SenhaSegura");
     System.out.println("Oi");
+
+    // 8 - Documentação função
+    System.out.println(calcularMedia(5, 10, 11));
+
+    // 9 - Escopo => contexto em que uma variavel ou método é acessivel em um
+    // programa, basicamente define onde você pode usar uma vriavel ou método
+
+    // escopo local(de método||função)
+    int localVar = 10;
+    System.out.println(localVar);
+
+    if (localVar == 10) {
+      int soma // escopo de bloco
+          = 10 + localVar;
+      System.out.println(soma);
+    }
+
+    System.out.println(globalVar); // pode ser acessada em qualquer lugar do código pertencente a classe
+    exemploEscopo(); // fixiando o exemplo acima!
+
+    // { } => abertura e fechamento de chaves delimitam um escopo, criam um escopo
 
   }
 
@@ -61,5 +89,21 @@ public class metodosB {
       System.exit(1);
     }
     System.out.println("Autenticação bem sucedida!");
+  }
+
+  /**
+   * Calcula a média de três números inteiros
+   * 
+   * @param num1  O primeiro numero a ser enviado
+   * @param num2o O segundo numero a ser enviado
+   * @param num3o O terceiro numero a ser enviado
+   * @return A média dos três numeros
+   */
+  public static double calcularMedia(int num1, int num2, int num3) {
+    return (num1 + num2 + num3) / 3;
+  }
+
+  public static void exemploEscopo() {
+    System.out.println(globalVar);
   }
 }
